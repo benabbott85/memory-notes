@@ -28,6 +28,16 @@
   color: #61dafb;
 }
 
+.matnav{
+  padding-left: 25px;
+}
+
+.matnavhome{
+  padding-left: 22px;
+ 
+
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -93,26 +93,32 @@ const MyDrawer = withStyles(styles)(
         })}
       />
       <List >
+      <ListItem button component={Link} to="/Home" onClick={onItemClick('Home')}>
+            <HomeIcon/>
+          <ListItemText className="matnavhome">Memory Notes</ListItemText>
+        </ListItem>
+
         <ListItem button component={Link} to="/Home" onClick={onItemClick('Home')}>
             <HomeIcon/>
           <ListItemText className="matnav">Home</ListItemText>
         </ListItem>
         <ListItem  button component={Link} to="/About" onClick={onItemClick('About')}>
             <InfoIcon/>
-          <ListItemText className="matnav" >About</ListItemText>
-        </ListItem>
-        <ListItem  button component={Link} to="/Contact" onClick={onItemClick('Contact')}>
-            <ContactsIcon/>
-          <ListItemText className="matnav" >Contact</ListItemText>
-        </ListItem>
-        <ListItem button component={Link} to="/Technologies" onClick={onItemClick('Technologies')}>
-            <ComputerIcon/>
-          <ListItemText className="matnav">Technologies</ListItemText>
+          <ListItemText className="matnav" >About Us</ListItemText>
         </ListItem>
         <ListItem  button component={Link} to="/portfolio" onClick={onItemClick('Portfolio')}>
             <WorkIcon/>
-          <ListItemText className="matnav">Portfolio</ListItemText>
+          <ListItemText className="matnav">Mood History</ListItemText>
         </ListItem>
+        <ListItem  button component={Link} to="/portfolio" onClick={onItemClick('Portfolio')}>
+            <WorkIcon/>
+          <ListItemText className="matnav">Mood Capture</ListItemText>
+        </ListItem>
+        <ListItem  button component={Link} to="/Contact" onClick={onItemClick('Contact')}>
+            <ContactsIcon/>
+          <ListItemText className="matnav" >Contact Us</ListItemText>
+        </ListItem>
+        
       </List>
     </Drawer>
     <main className={classes.content}>
