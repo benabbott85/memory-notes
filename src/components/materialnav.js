@@ -16,11 +16,12 @@ import ListItemText from '@material-ui/core/ListItemText';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
-// import Home from "./pages/Home";
-// import About from "./pages/About";
-// import Contact from "./pages/Contact";
-// import Technologies from "./pages/Technologies";
-// import Portfolio from "./pages/Portfolio";
+import Home from "../pages/home"
+import About from "../pages/about"
+import Capture from "../pages/capture"
+import Contact from "../pages/contact"
+import History from "../pages/history"
+
 import HomeIcon from '@material-ui/icons/Home';
 import InfoIcon from '@material-ui/icons/Info';
 import ContactsIcon from '@material-ui/icons/Contacts';
@@ -106,11 +107,11 @@ const MyDrawer = withStyles(styles)(
             <InfoIcon/>
           <ListItemText className="matnav" >About Us</ListItemText>
         </ListItem>
-        <ListItem  button component={Link} to="/portfolio" onClick={onItemClick('Portfolio')}>
+        <ListItem  button component={Link} to="/History" onClick={onItemClick('Portfolio')}>
             <WorkIcon/>
           <ListItemText className="matnav">Mood History</ListItemText>
         </ListItem>
-        <ListItem  button component={Link} to="/portfolio" onClick={onItemClick('Portfolio')}>
+        <ListItem  button component={Link} to="/Capture" onClick={onItemClick('Portfolio')}>
             <WorkIcon/>
           <ListItemText className="matnav">Mood Capture</ListItemText>
         </ListItem>
@@ -122,12 +123,12 @@ const MyDrawer = withStyles(styles)(
       </List>
     </Drawer>
     <main className={classes.content}>
-        {/* <Route exact path ="/" component={Home}/>
+         <Route exact path ="/" component={Home}/>
         <Route exact path="/Home" component={Home} />
-        <Route path="/About" component={About} />
+         <Route path="/About" component={About} />
         <Route path="/Contact" component={Contact} />
-        <Route path="/Technologies" component={Technologies} />
-        <Route path="/Portfolio" component={Portfolio} /> */}
+        <Route path="/Capture" component={Capture} />
+        <Route path="/History" component={History} /> 
     </main>
     </Router>
   )
